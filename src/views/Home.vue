@@ -1,12 +1,17 @@
 <template>
   <div id="home">
     <el-container>
-        <el-header><a-banner/></el-header>
-        <el-header><a-header/></el-header>
-        <el-container>
-            <el-aside width="200px"><a-aside/></el-aside>
-            <el-main><a-main/></el-main>
-        </el-container>
+        <el-header class="bannner" height="58px"><a-banner/></el-header>
+        <hr style="border:1px solid #EBEEF5;" />
+        <el-header class="header" height="61px"><a-header/></el-header>
+        <el-row>
+          <el-col :span="20" :offset="2">
+            <el-container>
+                <el-aside width="100px"><a-aside/></el-aside>
+                <el-main><a-main/></el-main>
+            </el-container>
+          </el-col>
+        </el-row>
         <el-footer><a-footer/></el-footer>
     </el-container>
   </div>
@@ -19,7 +24,6 @@ import AAside from '@/components/AAside'
 import AMain from '@/components/AMain'
 import AFooter from '@/components/AFooter'
 export default {
-
   name: 'home',
   data () {
     return {
@@ -36,13 +40,21 @@ export default {
 </script>
 
 <style scoped>
-  .el-header, .el-footer {
-    background-color: #B3C0D1;
-  }
-  .el-aside {
-    background-color: #D3DCE6;
-  }
-  .el-main {
-    background-color: #E9EEF3;
-  }
+.el-footer {
+  padding: 0px;
+}
+.banner {
+  padding: 0px;
+  line-height: 58px;
+}
+.header {
+  padding: 0px;
+  line-height: 61px;
+}
+.el-aside {
+  padding: 0px;
+}
+.el-main {
+  padding: 0px;
+}
 </style>

@@ -1,20 +1,19 @@
 <template>
-  <div id="homeHead">
-    <p>main</p>
+  <div>
+    <el-image
+      style="width: 500px; height: 400px"
+      :src="url"
+      :fit="fit"></el-image>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'main',
   data () {
     return {
+      fit: 'fill',
+      url: require('../assets/img/banner.jpg')
     }
   }
 }
 </script>
-
-<style scoped>
-
-</style>
