@@ -1,13 +1,13 @@
 <template>
   <div id="homeHead">
-    <h1>HomeHead</h1>
+    <p>header</p>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'HomeHead',
+  name: 'header',
   data () {
     return {
     }
@@ -15,7 +15,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 </style>
